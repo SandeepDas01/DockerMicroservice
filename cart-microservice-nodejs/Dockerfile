@@ -1,5 +1,5 @@
 FROM node:14
-MAINTAINER sarat.e99@gmail.com Sarat Chandra E
+MAINTAINER sandeepdas8080@gmail.com Sandeep das
 
 WORKDIR /app
 COPY . .

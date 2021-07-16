@@ -1,8 +1,10 @@
 FROM node:8
-MAINTAINER sarat.e99@gmail.com Sarat Chandra E
+MAINTAINER sandeepdas8080@gmail.com Sandeep Das
 
 
 WORKDIR /app
+
+#copy local to docker
 COPY . .
 
 RUN npm install express

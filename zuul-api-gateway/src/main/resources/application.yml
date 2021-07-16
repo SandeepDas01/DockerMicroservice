@@ -3,24 +3,21 @@ spring:
     name: zuul-server
 server:
   port : 9999
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+
 zuul:
   routes:
     offer:
       path: /offer/**
-      url: http://localhost:1001/api/v1
+      url: http://65.2.123.169:1001/api/v1
     shoe:
       path: /shoe/**
-      url: http://localhost:1002/api/v1
+      url: http://65.2.123.169/:1002/api/v1
     wishlist:
       path: /wishlist/**
-      url: http://localhost:1003
+      url: http://65.2.123.169:1003
     cart:
       path: /cart/**
-      url: http://localhost:1004/api/v1
+      url: http://65.2.123.169:1004/api/v1
     shoe-service:
       path: /shoeapi/**
       serviceId: shoe-client
